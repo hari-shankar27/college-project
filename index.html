@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .logo a{
+color: black;
+text-decoration: none;
+
+
+    }
+    .all{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+        gap: 20px;
+        font-weight: bold;
+        background-color: whitesmoke;
+
+    }
+.navbar{
+    display: flex;
+    gap: 20px;
+} 
+
+    .navbar a{
+        color: black;
+        text-decoration: none;
+        font-size: 15px;
+    }
+    .search input{
+        padding: 5px;
+        border-radius: 5px;
+        border: none;
+    }
+    .auth{
+        display: flex;
+        gap: 15px;
+    }
+    .auth a{
+        color: black;
+        text-decoration: none;
+        font-size: 15px;
+    }
+    .login{
+        transition-duration: 0.4s;
+    }
+    .signup{
+        margin-right: 5px;
+        transition-duration: 0.4s;
+    }
+    .login:hover{
+        padding: 5px 10px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    }
+    .signup:hover{
+        padding: 5px 10px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    }
+
+    .cart{
+        
+        font-weight: bold;
+        color: black;
+        border: none;   
+        border-radius: 5px;
+        transition-duration: 0.4s;
+    }
+    .cart:hover{
+        padding: 5px 10px;
+        margin: 3px;
+        background-color: black;
+        color: white;
+
+    }
+</style>
+<body>
+    
+    <div class="all">
+<div class="logo"><a href="index.html">My Website</a></div>
+
+<nav class="navbar">
+    <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+
+            <a href="services.html">Services</a>
+
+                <a href="contact.html">Contact</a>
+                 <input type="text" placeholder="Search..."> 
+                
+
+</nav>
+<div class="auth">
+   
+<a class="login" href="login.html">Login</a>
+<a class="signup" href="signup.html">Signup</a>
+<button class="cart">Cart</button>
+    </div>
+
+
+
+</body>
+</html>
