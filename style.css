@@ -332,3 +332,73 @@ margin-top: 30px;
     color:black;
 }
 
+/* index below */
+
+   .now{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+   
+        background: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),url('https://t3.ftcdn.net/jpg/06/16/32/56/360_F_616325659_BOYDbtlbIaa7g2s81HfulxujPcPLZHbj.jpg') center/cover fixed;
+   }
+.hd{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    text-align:start;
+    margin-top: 180px;
+    margin-left: 50px;
+
+}
+.hh{
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    text-align:start;
+    margin-top: -20px;
+    margin-left: 50px;
+}
+.para{
+    color: white;
+    font-size: 15px;
+    font-weight: semibold;
+    text-align:start;
+    margin-top: -20px;
+    margin-left: 50px;
+}
+.btns{
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+.dis{
+     color: white;
+        padding: 12px 25px;
+        font-weight: bold;
+        border: none;
+          background:none;
+margin-top: -7px;
+border: white solid 3px;
+        border-radius: 30px;
+        animation: .17s;
+}
+.cartt{
+     color: white;
+        padding: 12px 25px;
+        font-weight: bold;
+        border: white solid 3px;
+          background: black;
+margin-top: -7px;
+        border-radius: 30px;
+        animation: .17s;
+  
+}
+.dis:hover{
+        box-shadow: 0 0 20px white;
+        transform: scale(1.05);
+    }
+ .cartt:hover{
+        box-shadow: 0 0 20px white;
+        transform: scale(1.05);
+    }
