@@ -1,5 +1,19 @@
-fetch("navbar.html")
-  .then(res => res.text())
+fetch('navbar.html')
+  .then(response => response.text())
   .then(data => {
-    document.getElementById("nav").innerHTML = data;
-  });
+    document.getElementById('nav').innerHTML = data;
+
+    const cartOverlay = document.getElementById('cartOverlay');
+    const openCartBtn = document.getElementById('openCart');
+
+    if(openCartBtn){
+        openCartBtn.addEventListener('click', () => {
+            cartOverlay.style.display = 'flex';
+        });
+    }
+});
+
+function closeCart() {
+    document.getElementById('cartOverlay').style.display = 'none';
+}
+
