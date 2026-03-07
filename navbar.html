@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 </head>
@@ -102,7 +103,12 @@ padding-bottom: 2px;
     text-decoration: none;
     font-size: 15px;
     font-weight: bold;
+    transition: 0.3s;
+
    }
+  .choice a.active{
+    border-bottom: 3px solid black;
+  }
    .drop{
     width: 120px;
     height: 25px;
@@ -119,10 +125,12 @@ padding-bottom: 2px;
    .drop i{
 margin-left: 30px;
    }
+ 
+
+     
 
 </style>
 <body>
-    <div id="nav">
     <div class="all">
 <div class="logo"><a href="index.html">My Website</a></div>
 
@@ -141,24 +149,29 @@ margin-left: 30px;
    
 <a class="login" href="login.html">Login</a>
 <a class="signup" href="signup.html">Signup</a>
-<button class="cart">Cart</button>
-    </div>
+<button class="cart" id="openCart">Cart</button>
 </div>
+    </div>
+
 
 <div class="categories">
 <div class="drop">
     Categories<i class="fa-solid fa-bars "></i>
 </div>
 <div class="choice">
-    <a href="electronics.html">Electronics</a>
+    <a href="electronics.html" >Electronics</a>
     <a href="#">Category 2</a>
     <a href="#">Category 3</a>
     <a href="#">Category 4</a>
     <a href="#">Category 5</a>
 </div>
 </div>
-
+<div id="cartOverlay">
+    <h2>My Cart</h2>
+    <div id="cartItems"></div>
+    <button class="closeCart" onclick="closeCart()">Close</button>
 </div>
 
+<script src="script.js"></script>
 </body>
 </html>
