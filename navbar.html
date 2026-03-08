@@ -28,6 +28,8 @@ text-decoration: none;
 .navbar{
     display: flex;
     gap: 20px;
+    
+
 } 
 
     .navbar a{
@@ -35,6 +37,7 @@ text-decoration: none;
         text-decoration: none;
         font-size: 15px;
     }
+    
     .search input{
         padding: 5px;
         border-radius: 5px;
@@ -112,10 +115,10 @@ padding-bottom: 2px;
    .drop{
     width: 120px;
     height: 25px;
-    display: flex;
+display: block;
+    position: relative;
     align-items: center;
     font-weight: bold;
-    transition-duration: 0.4s;
     background-color: black;
     color: white;
     padding: 5px 10px;
@@ -126,9 +129,20 @@ padding-bottom: 2px;
 margin-left: 30px;
    }
    .down{
-    display: none;
-    position: absolute;
-    background-color: black;
+     display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+   }
+   
+   .down a{
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+   }
+   .down a:hover{
+    background-color: gainsboro;
    }
  .drop:hover .down{
     display: block;
@@ -142,12 +156,12 @@ margin-left: 30px;
 <div class="logo"><a href="index.html">My Website</a></div>
 
 <nav class="navbar">
-    <a href="index.html">Home</a>
-        <a href="about.html">About</a>
+    <a  class="item" href="index.html">Home</a>
+        <a class="item" href="about.html">About</a>
 
-            <a href="services.html">Services</a>
+            <a class="item" href="services.html">Services</a>
 
-                <a href="contact.html">Contact</a>
+                <a class="item" href="contact.html">Contact</a>
                  <input type="text" placeholder="Search..."> 
                 
 
@@ -165,32 +179,34 @@ margin-left: 30px;
 <div class="drop">
     Categories<i class="fa-solid fa-bars "></i>
 <div class="down">
-    <a href="#">Electronics</a>
-    <a href="#">Fashion</a>
-    <a href="#">Beauty</a>
-    <a href="#">Groceries</a>
-    <a href="#">Books and Stationary</a>
-    <a href="#">Kids</a>
+    <a href="#">All Categories</a>
+    <a href="electronics.html">Electronics</a>
+    <a href="fashion.html">Fashion</a>
+    <a href="beauty.html">Beauty</a>
+    <a href="groceries.html">Groceries</a>
+    <a href="books.html">Books and Stationary</a>
+    <a href="kids.html">Kids</a>
 
     
 </div>
 
 </div>
 <div class="choice">
-    <a href="electronics.html">Electronics</a>
-    <a href="fashion.html">Fashion</a>
-    <a href="beauty.html">Beauty</a>
-    <a href="groceries.html">Groceries</a>
-    <a href="books.html">Books and stationary</a>
-      <a href="kids.html">Kids section</a>
+    <a class="items" href="electronics.html">Electronics</a>
+    <a class="items" href="fashion.html">Fashion</a>
+    <a class="items" href="beauty.html">Beauty</a>
+    <a class="items" href="groceries.html">Groceries</a>
+    <a class="items" href="books.html">Books and stationary</a>
+      <a class="items" href="kids.html">Kids section</a>
     
 </div>
 </div>
 <div id="cartOverlay">
-    <h2>My Cart</h2>
+    <h2>My Cart <i class="fa-solid fa-cart-arrow-down"></i></h2>
     <div id="cartItems"></div>
     <button class="closeCart" onclick="closeCart()">Close</button>
 </div>
+
 
 <script src="script.js"></script>
 </body>

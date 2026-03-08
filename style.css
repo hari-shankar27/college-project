@@ -467,7 +467,6 @@ margin-top: -7px;
    
    display: none;
    
-   z-index: 1000;
 }
 #cartOverlay button{
     margin-top: 20px;
@@ -479,4 +478,35 @@ margin-top: -7px;
     border: none;
     border-radius: 5px;
     font-weight: bold;
+}
+.item, .items{
+   
+        position: relative;
+}
+.item:hover, .items:hover{
+    color: blue;
+}
+
+.item::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 2px;
+    width: 0%;
+    background-color: blue;
+    height: 2px;
+    transition: width 0.5s ease;
+}
+.items::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 4px;
+    width: 0%;
+    background-color: blue;
+    height: 2px;
+    transition: width 0.5s ease;
+}
+.item:hover::after, .items:hover::after{
+    width: 100%;
 }
