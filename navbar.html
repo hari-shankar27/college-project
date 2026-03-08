@@ -125,7 +125,14 @@ padding-bottom: 2px;
    .drop i{
 margin-left: 30px;
    }
- 
+   .down{
+    display: none;
+    position: absolute;
+    background-color: black;
+   }
+ .drop:hover .down{
+    display: block;
+ }
 
      
 
@@ -157,6 +164,17 @@ margin-left: 30px;
 <div class="categories">
 <div class="drop">
     Categories<i class="fa-solid fa-bars "></i>
+<div class="down">
+    <a href="#">Electronics</a>
+    <a href="#">Fashion</a>
+    <a href="#">Beauty</a>
+    <a href="#">Groceries</a>
+    <a href="#">Books and Stationary</a>
+    <a href="#">Kids</a>
+
+    
+</div>
+
 </div>
 <div class="choice">
     <a href="electronics.html">Electronics</a>
@@ -165,11 +183,7 @@ margin-left: 30px;
     <a href="groceries.html">Groceries</a>
     <a href="books.html">Books and stationary</a>
       <a href="kids.html">Kids section</a>
-    <a href="electronics.html" >Electronics</a>
-    <a href="#">Category 2</a>
-    <a href="#">Category 3</a>
-    <a href="#">Category 4</a>
-    <a href="#">Category 5</a>
+    
 </div>
 </div>
 <div id="cartOverlay">
