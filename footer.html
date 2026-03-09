@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="style.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<style>
+
+    .footer{
+        background-color: black;
+        color: white;
+        padding: 10px 100px;
+        margin-top: 30px;
+        min-height: 200px;
+        overflow: hidden;
+    }
+    .footer-content{
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    .footer-about{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .footer-about h3{
+        font-weight: bold;
+    }
+    .footer-about a{
+        text-decoration: none;
+        color: rgb(73, 72, 72);
+        font-weight: bold;
+        transition: 0.3s;
+        transition: text-decoration 5s;
+    }
+    .footer-about a:hover{
+        color: white;
+        text-decoration: underline black;
+    }
+.social{
+display: flex;
+gap: 20px;
+font-size: 40px;
+}
+.social a{
+            color: #333;
+            transition: 0.5s;
+
+}
+.footer hr{
+    margin-top: 30px;
+    border: none;
+   height: 2px;
+   background-color: rgba(255, 255, 255, 0.3);
+}
+.p{
+    text-align: center;
+    color: gray;
+}
+
+
+</style>
+<body>
+    <footer class="footer">
+        <div class="footer-content">
+<div class="footer-about">
+<h3>About Us</h3>
+<a href="#">Privacy Policy</a>
+<a href="#">FAQ</a>
+<a href="#">Terms and Conditions</a>
+
+
+
+</div>
+<div class="footer-about">
+    <h3>TopBar</h3>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="#">Services</a>
+    <a href="contact.html">Contact</a>
+</div>
+<div class="footer-about">
+    <h3>Categories</h3>
+    <a href="electronics.html">Electronics</a>
+            <a href="fashion.html">Fashion</a>
+            <a href="beauty.html">Beauty</a>
+            <a href="groceries.html">Groceries</a>
+            <a href="books.html">Books and Stationery</a>
+            <a href="kids.html">Kids</a>
+</div>
+<div class="footer-about">
+<h3>Follow Us:</h3>
+<div class="social">
+   <a href=""> <i class="fa-brands fa-facebook"></i></a>
+   <a href=""> <i class="fa-brands fa-instagram"></i></a>
+   <a href=""> <i class="fa-brands fa-youtube"></i></a>
+   <a href=""> <i class="fa-brands fa-twitter"></i></a>
+
+</div>
+
+</div>
+        </div>
+        <hr>
+        <p class="p">@copy Right Reserved. E-commerce Website</p>
+    </footer>
+</body>
+</html>

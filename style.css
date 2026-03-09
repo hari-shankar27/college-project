@@ -81,9 +81,15 @@ font-weight: bold;
 .fp:hover{
     text-decoration: underline;
 }
-.box hr{
-    color:rgb(71, 3, 4);
+
+hr{
+    border: none;
+    height: 1px;
+    background-color: gray;
+    margin: 2px 0;
 }
+
+
 .container {
     width: 400px;
      padding: 20px;
