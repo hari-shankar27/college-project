@@ -11,14 +11,14 @@
 <div class="box">
     <h1><a class="home" href="index.html">Login Page</a></h1>
     <br>
-    <form>
-        <label>Username:</label>
+    <form action="log.php" method="post">
+        <label>Email:</label>
         <br>
-        <input type="text" name="" placeholder=" Enter your username"required>
+        <input type="email" name="email" placeholder=" Enter your email" required>
         <br>
         <br>
         <label>Password:</label><br>
-        <input type="password" name="" placeholder=" Enter your password" required>
+        <input type="password" name="password" placeholder=" Enter your password" required>
         <br>
         <br>
         <button class="btn1" type="submit">Login</button>
@@ -30,7 +30,7 @@
            <hr>
            <br>
            
-           <button class="btn2"><a href="signup.html">Create a new account</a></button>
+           <button class="btn2"><a href="signup.php">Create a new account</a></button>
     </form> 
     </div>
     </div>
