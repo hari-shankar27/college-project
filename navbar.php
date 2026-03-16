@@ -72,6 +72,15 @@ text-decoration: none;
     color: white;
     border-radius: 5px;
     }
+    .logout{
+        transition-duration: 0.4s;
+    }
+    .logout:hover{
+        padding: 5px 10px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    }
 
     .cart{
         
@@ -166,10 +175,10 @@ margin-left: 30px;
 </style>
 <body>
     <div class="all">
-<div class="logo"><a href="index.html">My Website</a></div>
+<div class="logo"><a href="index.php">My Website</a></div>
 
 <nav class="navbar">
-    <a  class="item" href="index.html">Home</a>
+    <a  class="item" href="index.php">Home</a>
         <a class="item" href="about.html">About</a>
 
             <a class="item" href="services.html">Services</a>
@@ -181,8 +190,12 @@ margin-left: 30px;
 </nav>
 <div class="auth">
    
-<a class="login" href="login.html">Login</a>
-<a class="signup" href="signup.html">Signup</a>
+<?php if(isset($_SESSION['user'])): ?>
+    <a class="logout" href="logout.php">Logout</a>
+<?php else: ?>
+    <a class="login" href="login.php">Login</a>
+    <a class="signup" href="signup.php">Signup</a>
+<?php endif; ?>
 <button class="cart" id="openCart">Cart</button>
 </div>
     </div>

@@ -11,7 +11,7 @@
     <div class="container">
         <h1>Sign Up</h1>
         <br>
-        <form>
+        <form action="register.php" method="post">
                  <label>Name:</label>
                  <br>
             <div class="name">
@@ -24,19 +24,19 @@
           <br>
            <label>Email:</label>
            <br>
-<input type="email" name="" placeholder=" Email" required>
+<input type="email" name="email" placeholder=" Email" required>
 <br>
 <br>
  <label>Password:</label>
  <br>
-<input type="password" name="" placeholder=" Password" required>
+<input type="password" name="password" placeholder=" Password" required>
 
 <br>
 <br>
 <button class="btn3" >Sign Up</button>
 <br>
 <br>
-<a class="al" href="login.html">
+<a class="al" href="login.php">
 <p>Already have an account?</p></a>
 <hr>
 

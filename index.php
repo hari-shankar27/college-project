@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<?php session_start(); ?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -16,7 +17,7 @@
   
 
 
-    <div id="nav"></div>
+    <?php include 'navbar.php'; ?>
     <div class="now">
 <h2 class="hd">Welcome to Our Website</h2>
 <h1 class="hh">Project: E-Commerce Website</h1>
