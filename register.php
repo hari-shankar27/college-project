@@ -3,7 +3,7 @@ include "db.php";
 
 $name = $_POST['firstname'] . ' ' . $_POST['lastname'];
 $email = $_POST['email'];
-$password = $_POST['password'];
+$password = password_hash($_POST['password'], PASSWORD_DEFAULT);
 
 $sql_check = "SELECT * FROM users WHERE email='$email'";
 $result_check = mysqli_query($conn, $sql_check);
