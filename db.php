@@ -1,5 +1,5 @@
 <?php
-$conn = mysqli_connect("localhost","root","","ecommerce");
+$conn = mysqli_connect("localhost","root","","commerce");
 
 if(!$conn){
     echo "Connection Failed";

@@ -16,8 +16,8 @@ $_SESSION['user'] = $user['id'];
 
 header("Location: index.php");
 
-}else{
-echo "Invalid Login";
+} else {
+    echo "Invalid email or password.";
 }
 
 ?>
